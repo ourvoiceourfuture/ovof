@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#menubar {
+    width: 100%;
+    height: 110px;
+    background-color: black;
+    box-sizing: border-box;
+}
+
+#menu-logo {
+    height: 100px;
+}
