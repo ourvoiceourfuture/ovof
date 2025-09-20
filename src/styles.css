@@ -50,25 +50,7 @@ li {
     /*flex-direction: column;*/
     /*align-items: center;*/
     /*TODO: figure out why this causes SVG to blow up*/
-}
-
-.menu-page-button {
-    color: white;
-    background-color: transparent;
-    font-size: 28px;
-}
-
-#menu-title {
-    color: white;
-    font-size: 11px;
-    transition: 0.3s ease-out;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
-    margin-top: 30px;
-    margin-bottom: 34px;
-    cursor: pointer;
+    /*transition: 0.3s ease-out;*/
 
     .hover-blue,
     .hover-red {
@@ -81,6 +63,10 @@ li {
 
     .second-mover {
         transition: 0.6s ease-in-out;
+    }
+
+    img {
+        transition: 0.3s ease-out;
     }
 
     &:hover {
@@ -105,7 +91,30 @@ li {
             color: orangered;
             transition: 0.5s ease-out;
         }
+
+        img {
+            transform: scale(1.03);
+            transition: 0.3s ease-out;
+        }
     }
+}
+
+.menu-page-button {
+    color: white;
+    background-color: transparent;
+    font-size: 28px;
+}
+
+#menu-title {
+    color: white;
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 34px;
+    cursor: pointer;
 }
 
 #main-banner {
