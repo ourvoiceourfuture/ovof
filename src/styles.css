@@ -16,14 +16,46 @@ h6 {
     padding: 0;
 }
 
+button {
+    font-family: "Helvetica";
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
 #menubar {
     width: 100%;
     height: 100px;
+    margin: 0;
+    padding: 0;
     background-color: black;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
+    align-items: center;
+    gap: 25px;
+}
+
+#menu-home-button {
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    padding-right: 40px;
+    padding-left: 15px;
+    /*flex-direction: column;*/
+    /*align-items: center;*/
+    /*TODO: figure out why this causes SVG to blow up*/
+}
+
+.menu-page-button {
+    color: white;
+    background-color: transparent;
+    font-size: 28px;
 }
 
 #menu-title {
@@ -77,11 +109,38 @@ h6 {
 }
 
 #main-banner {
+    color: white;
     width: 100%;
     height: 1100px;
-    object-fit: cover;
+    background-image: url("./assets/bidenflag3.jpg");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    h1 {
+        margin-top: 170px;
+    }
 }
 
 #page-body {
     margin: 13px;
+}
+
+#join-button {
+    color: white;
+    transition: 0.12s ease-out;
+    font-size: 30px;
+    padding-top: 23px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: navy;
+
+    &:hover {
+        background-color: blue;
+        transition: 0.12s ease-out;
+    }
 }
