@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    background-color: white;
 }
 
 p,
@@ -42,20 +43,43 @@ h6 {
         transition: 0.7s ease-out;
     }
 
+    .first-mover {
+        transition: 0.5s ease-out;
+    }
+
+    .second-mover {
+        transition: 0.6s ease-in-out;
+    }
+
     &:hover {
-        transform: translateX(-5px);
         transition: 0.3s ease-out;
 
+        .first-mover {
+            transform: translateX(-5px);
+            transition: 0.5s ease-out;
+        }
+
+        .second-mover {
+            transform: translateX(-5px);
+            transition: 0.6s ease-in-out;
+        }
+
         .hover-blue {
-            color: lightskyblue;
+            color: deepskyblue;
             transition: 0.5s ease-out;
         }
 
         .hover-red {
-            color: lightcoral;
+            color: orangered;
             transition: 0.5s ease-out;
         }
     }
+}
+
+#main-banner {
+    width: 100%;
+    height: 1100px;
+    object-fit: cover;
 }
 
 #page-body {
