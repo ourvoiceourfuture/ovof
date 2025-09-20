@@ -3,13 +3,61 @@ body {
     padding: 0;
 }
 
-#menubar {
-    width: 100%;
-    height: 110px;
-    background-color: black;
-    box-sizing: border-box;
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica";
+    margin: 0;
+    padding: 0;
 }
 
-#menu-logo {
+#menubar {
+    width: 100%;
     height: 100px;
+    background-color: black;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+#menu-title {
+    color: white;
+    font-size: 11px;
+    transition: 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+    margin-bottom: 34px;
+    cursor: pointer;
+
+    .hover-blue,
+    .hover-red {
+        transition: 0.7s ease-out;
+    }
+
+    &:hover {
+        transform: translateX(-5px);
+        transition: 0.3s ease-out;
+
+        .hover-blue {
+            color: lightskyblue;
+            transition: 0.5s ease-out;
+        }
+
+        .hover-red {
+            color: lightcoral;
+            transition: 0.5s ease-out;
+        }
+    }
+}
+
+#page-body {
+    margin: 13px;
 }
