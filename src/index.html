@@ -5,15 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <title>Our Voice, Our Future</title>
+        <link rel="stylesheet" href="./resets.css" />
+        <link rel="stylesheet" href="./utils.css" />
         <link rel="stylesheet" href="./styles.css" />
         <link rel="icon" href="./assets/ovof_favicon.svg" type="image/x-icon" />
     </head>
     <body>
         <main>
-            <menu id="menubar">
-                <li id="menu-home-button">
+            <menu id="menubar" class="flex-row align-center force-full-width">
+                <li id="menu-home-button" class="full-height pointer">
                     <img src="assets/ovof_logo_small.svg" />
-                    <div id="menu-title">
+                    <div id="menu-title" class="flex-column space-between">
                         <h1 class="first-mover">
                             <span class="hover-blue">O</span>U<span
                                 class="hover-blue"
@@ -47,20 +49,26 @@
                     </a>
                 </li>
             </menu>
-            <div id="main-banner">
-                <div id="join-cta">
+            <div
+                id="main-banner"
+                class="flex-column justify-center align-center force-screen-height"
+            >
+                <div id="join-cta" class="flex-column">
                     <h1>It's time to take America back.</h1>
                     <a href="https://ovof.org/discord">
                         <button id="join-button">Join the movement</button>
                     </a>
                 </div>
             </div>
-            <div id="page-body">
+            <div id="page-body" class="flex-column align-center">
                 <h2>What we stand for</h2>
                 <hr class="short-vertical-line" />
-                <div class="bracket-border" style="width: 50%"></div>
-                <div class="column-page">
-                    <div class="half-column">
+                <div class="bracket-border force-half-width"></div>
+                <div class="flex-row space-between force-full-width">
+                    <div
+                        class="flex-column align-center force-half-width"
+                        style="height: 800px"
+                    >
                         <h2>Liberalism</h2>
                         <hr class="short-vertical-line" />
                         <div class="flex-row" style="width: 80%">
@@ -82,7 +90,10 @@
                             ></div>
                         </div>
                     </div>
-                    <div class="half-column">
+                    <div
+                        class="flex-column align-center force-half-width"
+                        style="height: 800px"
+                    >
                         <h2>Electoralism</h2>
                         <hr class="short-vertical-line" />
                         <div class="bracket-border" style="width: 50%"></div>

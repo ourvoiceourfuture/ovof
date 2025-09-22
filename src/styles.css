@@ -1,77 +1,17 @@
-html::-webkit-scrollbar {
-    display: none;
-}
-
-html {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: white;
-    overflow: scroll;
-}
-
-p,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Helvetica";
-    margin: 0;
-    padding: 0;
-}
-
-a {
-    text-decoration: none;
-}
-
-button {
-    font-family: "Helvetica";
-    border: none;
-    border-radius: 0;
-    cursor: pointer;
-}
-
-li {
-    list-style-type: none;
-}
-
-hr {
-    border: none;
-    background-color: black;
-    margin: 0;
-}
-
 #menubar {
-    width: 100%;
     height: 8vh;
-    margin: 0;
-    padding: 0;
     background: linear-gradient(black, rgba(20, 20, 35, 0.7), transparent);
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
     gap: 25px;
     position: fixed;
 }
 
 #menu-home-button {
-    height: 100%;
-    box-sizing: border-box;
     display: flex;
     padding-right: 40px;
     padding-left: 15px;
     /*flex-direction: column;*/
     /*align-items: center;*/
     /*TODO: figure out why this causes SVG to blow up*/
-    /*transition: 0.3s ease-out;*/
 
     .hover-blue,
     .hover-red {
@@ -135,25 +75,14 @@ hr {
 #menu-title {
     color: white;
     font-size: 11px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: flex-start;
     margin-top: 2.1vh;
     margin-bottom: 34px;
-    cursor: pointer;
 }
 
 #main-banner {
     color: white;
-    width: 100%;
-    height: 100vh;
     background-image: url("./assets/bidenflag3.jpg");
     background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     gap: 15px;
 }
 
@@ -163,12 +92,7 @@ hr {
     padding-top: 30px;
     padding-left: 50px;
     padding-right: 50px;
-    box-sizing: border-box;
-    min-height: 3000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
+    min-height: 100vh;
 
     h2 {
         margin-top: 6px;
@@ -183,8 +107,6 @@ hr {
 }
 
 #join-cta {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     gap: 13px;
     margin-top: 13vh;
@@ -207,34 +129,11 @@ hr {
         rgba(9, 9, 121, 1) var(--x),
         rgba(0, 119, 255, 1) 100%
     );
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
 
     &:hover {
         --x: 20%;
         transform: scale(1.03);
     }
-}
-
-.column-page {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-.half-column {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    width: 50%;
-    height: 800px;
-    box-sizing: border-box;
 }
 
 .short-vertical-line {
@@ -248,9 +147,4 @@ hr {
     border-bottom: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-}
-
-.flex-row {
-    display: flex;
-    flex-direction: row;
 }

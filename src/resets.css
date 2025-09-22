@@ -1,0 +1,53 @@
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: scroll;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Helvetica";
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    font-family: "Helvetica";
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+li {
+    list-style-type: none;
+}
+
+hr {
+    border: none;
+    background-color: black;
+    margin: 0;
+}
+
+menu {
+    margin: 0;
+    padding: 0;
+}
