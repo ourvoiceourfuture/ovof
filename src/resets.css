@@ -47,7 +47,9 @@ hr {
     margin: 0;
 }
 
-menu {
+nav,
+ul,
+ol {
     margin: 0;
     padding: 0;
 }
