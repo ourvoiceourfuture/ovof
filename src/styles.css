@@ -175,12 +175,6 @@ li {
     initial-value: 10%;
 }
 
-@property --y {
-    syntax: "<percentage>";
-    inherits: false;
-    initial-value: 10%;
-}
-
 #join-button {
     color: white;
     font-size: 27px;
