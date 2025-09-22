@@ -89,10 +89,10 @@
 #page-body {
     background-color: rgb(220, 220, 250);
     color: rgb(60, 60, 75);
-    padding-top: 30px;
+    padding-top: 12vh;
     padding-left: 50px;
     padding-right: 50px;
-    min-height: 100vh;
+    height: 88vh;
 
     h2 {
         margin-top: 6px;
@@ -107,9 +107,8 @@
 }
 
 #join-cta {
-    align-items: center;
     gap: 13px;
-    margin-top: 13vh;
+    margin-top: 52vh;
 }
 
 #join-button {
@@ -147,4 +146,13 @@
     border-bottom: none;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+}
+
+.principle-column {
+    height: 75vh;
+}
+
+.principle-subcolumn {
+    background-color: slategrey;
+    width: 47%;
 }
